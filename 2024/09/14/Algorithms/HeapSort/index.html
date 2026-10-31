@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="keywords" content="mathematics, computer science, algorithms, probability, learning notes">
     
     <meta name="author" content="Zhao Cong">
     <!-- preconnect -->
@@ -27,18 +27,20 @@
     
     
         
-        <meta name="description" content="false">
+        <meta name="description" content="Notes on mathematics and computer science by Zhao Cong. 数学、计算机科学与学习记录。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HeapSort">
 <meta property="og:url" content="https://zhaocong-blog.github.io/2024/09/14/Algorithms/HeapSort/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="false">
+<meta property="og:site_name" content="ZC&#39;s Blog">
+<meta property="og:description" content="Notes on mathematics and computer science by Zhao Cong. 数学、计算机科学与学习记录。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-09-14T06:33:05.726Z">
-<meta property="article:modified_time" content="2024-09-14T08:09:20.794Z">
-<meta property="article:author" content="John Doe">
+<meta property="og:image" content="https://zhaocong-blog.github.io/images/wallhaven-g7y92e.jpg">
+<meta property="article:published_time" content="2024-09-13T21:33:05.726Z">
+<meta property="article:modified_time" content="2024-09-13T23:09:20.794Z">
+<meta property="article:author" content="Zhao Cong">
 <meta property="article:tag" content="Algorithms">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zhaocong-blog.github.io/images/wallhaven-g7y92e.jpg">
     
     
     <!--- Icon Part-->
@@ -58,6 +60,16 @@
 
     <!--- Inject Part-->
     
+        
+            
+    
+            
+    
+            
+                
+                    <link rel="stylesheet" href="/css/custom.css">
+                
+    
 
     
 <link rel="stylesheet" href="/css/style.css">
@@ -76,12 +88,10 @@
     
     
     
-        <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/anime.min.js" ></script>
-    
 
     <script id="hexo-configurations">
-    window.config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":false,"default":"cc_by_nc_sa"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":true,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#Ffc0cb","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":true},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-g7y92e.jpg","dark":"/images/wallhaven-g7y92e.jpg"},"title":"ZC's Blog","subtitle":{"text":["Simplicity favors regularity"],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#000000","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/zhaocong-blog","instagram":"https://www.instagram.com/acheesebird?igsh=czBzYTdxMXEzaWFr&utm_source=qr","zhihu":null,"twitter":"https://x.com/acheesebird?s=11","email":"aiwdj@outlook.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":"Imagine","artist":"John Lennon","url":"https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3","cover":"https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg","lrc":null},{"name":"Something Just Like This","artist":"Coldplay","url":"https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3","cover":"https://evan.beee.top/music/covers/Something_Just_Like_This.png"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.8.2","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"What did I do today?":{"path":"/essays","icon":"fa-regular fa-message"},"About":{"icon":"fa-regular fa-archive","submenus":{"Me":"/about","Github":"https://github.com/zhaocong-blog/zhaocong-blog.github.io"}}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"Just do it!","show_on_mobile":true,"links":{"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"YYYY-MM-DD HH:mm:ss","excerpt_length":200,"categories":{"enable":true,"limit":999},"tags":{"enable":true,"limit":3}},"footerStart":"2024/8/14 04:47:14"};
+    window.config = {"hostname":"zhaocong-blog.github.io","root":"/","language":"en","path":"search.xml"};
+    window.theme = {"articles":{"style":{"font_size":"17px","line_height":1.75,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":false,"default":"cc_by_nc_sa"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#Ffc0cb","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":true},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":{"enable":true,"image":"/images/wallhaven-g7y92e.jpg","description":"Notes on mathematics and computer science by Zhao Cong. 数学、计算机科学与学习记录。"},"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"static","image":{"light":"/images/wallhaven-g7y92e.jpg","dark":"/images/wallhaven-g7y92e.jpg"},"title":"ZC's Blog","subtitle":{"text":["Simplicity favors regularity"],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#000000","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/zhaocong-blog","instagram":"https://www.instagram.com/acheesebird?igsh=czBzYTdxMXEzaWFr&utm_source=qr","zhihu":null,"twitter":"https://x.com/acheesebird?s=11","email":"aiwdj@outlook.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":"Imagine","artist":"John Lennon","url":"https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3","cover":"https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg","lrc":null},{"name":"Something Just Like This","artist":"Coldplay","url":"https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3","cover":"https://evan.beee.top/music/covers/Something_Just_Like_This.png"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.8.2","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Study guide":{"path":"/courses/","icon":"fa-regular fa-book-open"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"What did I do today?":{"path":"/essays","icon":"fa-regular fa-message"},"About":{"icon":"fa-regular fa-archive","submenus":{"Me":"/about","Github":"https://github.com/zhaocong-blog/zhaocong-blog.github.io"}}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"Mathematics, computer science & learning notes.","show_on_mobile":true,"links":{"Start here":{"path":"/courses/","icon":"fa-regular fa-book-open"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"YYYY-MM-DD","excerpt_length":200,"categories":{"enable":true,"limit":999},"tags":{"enable":true,"limit":3}},"footerStart":"2024/8/14 04:47:14"};
     window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     window.data = {"masonry":false};
   </script>
@@ -223,153 +233,6 @@ mjx-container[display="true"] + br {
 	
 </div>
 
-<style>
-    :root {
-        --preloader-background-color: #fff;
-        --preloader-text-color: #000;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --preloader-background-color: #202124;
-            --preloader-text-color: #fff;
-        }
-    }
-
-    @media (prefers-color-scheme: light) {
-        :root {
-            --preloader-background-color: #fff;
-            --preloader-text-color: #000;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .ml13 {
-            font-size: 2.6rem !important; /* Adjust this value as needed */
-        }
-    }
-
-    .preloader {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        padding: 12px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh; /* 'h-screen' is 100% of the viewport height */
-        background-color: var(--preloader-background-color);
-        z-index: 1100; /* 'z-[1100]' sets the z-index */
-        transition: opacity 0.2s ease-in-out;
-    }
-
-    .ml13 {
-        font-size: 3.2rem;
-        /* text-transform: uppercase; */
-        color: var(--preloader-text-color);
-        letter-spacing: -1px;
-        font-weight: 500;
-        font-family: 'Chillax-Variable', sans-serif;
-        text-align: center;
-    }
-
-    .ml13 .word {
-        display: inline-flex;
-        flex-wrap: wrap;
-        white-space: nowrap;
-    }
-
-    .ml13 .letter {
-        display: inline-block;
-        line-height: 1em;
-    }
-</style>
-
-<div class="preloader">
-    <h2 class="ml13">
-        ZC&#39;s Blog
-    </h2>
-    <script>
-        var textWrapper = document.querySelector('.ml13');
-        // Split text into words
-        var words = textWrapper.textContent.trim().split(' ');
-
-        // Clear the existing content
-        textWrapper.innerHTML = '';
-
-        // Wrap each word and its letters in spans
-        words.forEach(function(word) {
-            var wordSpan = document.createElement('span');
-            wordSpan.classList.add('word');
-            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
-            textWrapper.appendChild(wordSpan);
-            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
-        });
-
-        var animation = anime.timeline({ loop: true })
-            .add({
-                targets: '.ml13 .letter',
-                translateY: [20, 0],
-                translateZ: 0,
-                opacity: [0, 1],
-                filter: ['blur(5px)', 'blur(0px)'],
-                easing: "easeOutExpo",
-                duration: 1200,
-                delay: (el, i) => 300 + 20 * i,
-            })
-            .add({
-                targets: '.ml13 .letter',
-                translateY: [0, -20],
-                opacity: [1, 0],
-                filter: ['blur(0px)', 'blur(5px)'],
-                easing: "easeInExpo",
-                duration: 1000,
-                delay: (el, i) => 15 * i,
-                complete: function() {
-                    hidePreloader();
-                }
-            }, '-=700');
-
-
-        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
-
-        // If the theme status is not found in local storage, check the preferred color scheme
-        if (themeStatus === undefined || themeStatus === null) {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                themeStatus = 'dark';
-            } else {
-                themeStatus = 'light';
-            }
-        }
-
-        // Now you can use the themeStatus variable in your code
-        if (themeStatus) {
-            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
-            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
-        } else {
-            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
-            document.documentElement.style.setProperty('--preloader-text-color', '#000');
-        }
-
-        window.addEventListener('load', function () {
-            setTimeout(hidePreloader, 5000); // Call hidePreloader after 5000 milliseconds if not already called by animation
-        });
-
-        function hidePreloader() {
-            var preloader = document.querySelector('.preloader');
-            preloader.style.opacity = '0';
-            setTimeout(function () {
-                preloader.style.display = 'none';
-            }, 200);
-        }
-    </script>
-</div>
-
 <main class="page-container" id="swup">
 
 	
@@ -406,6 +269,23 @@ mjx-container[display="true"] + br {
                                         >
                                     <i class="fa-regular fa-house fa-fw"></i>
                                     HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/courses/"
+                                        >
+                                    <i class="fa-regular fa-book-open fa-fw"></i>
+                                    STUDY GUIDE
                                     
                                 </a>
 
@@ -530,6 +410,26 @@ mjx-container[display="true"] + br {
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
                         <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/courses/"
+                        >
+                            <span>
+                                STUDY GUIDE
+                            </span>
+                            
+                                <i class="fa-regular fa-book-open fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/archives"
                         >
                             <span>
@@ -601,6 +501,16 @@ mjx-container[display="true"] + br {
 
             
             
+                
+                    
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/courses/"
+                        >
+                            <span>Start here</span>
+                            <i class="fa-regular fa-book-open fa-sm fa-fw"></i>
+                        </a>
+                    </li>
                 
                     
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
@@ -678,15 +588,15 @@ mjx-container[display="true"] + br {
 					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-09-14 14:33:05</span>
-        <span class="mobile">2024-09-14 14:33:05</span>
+        <span class="desktop">2024-09-14 06:33:05</span>
+        <span class="mobile">2024-09-14 06:33:05</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-09-14 16:09:20</span>
-            <span class="mobile">2024-09-14 16:09:20</span>
+            <span class="desktop">2024-09-14 08:09:20</span>
+            <span class="mobile">2024-09-14 08:09:20</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -747,6 +657,12 @@ mjx-container[display="true"] + br {
 		
 
 
+		<aside class="note-status">
+			
+			<strong>Study notes · 学习笔记</strong>
+			
+			 · <a href="/courses/#reading-notes">关于笔记与复核状态</a>
+		</aside>
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
 			<p>Heapsort. Like <strong>merge sort</strong>, but unlike
 <strong>insertion sort</strong>, heapsort’s running time is <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="7.955ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 3516 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1152,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mi" transform="translate(1752,0)"><path data-c="1D459" d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z"></path></g><g data-mml-node="mi" transform="translate(2050,0)"><path data-c="1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path></g><g data-mml-node="mi" transform="translate(2527,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(3127,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container></span>. Like <strong>insertion
@@ -849,35 +765,6 @@ EXTRACT-MIN, and DECREASE-KEY</li>
 		
 
 		
-  <div class="recommended-article px-2 sm:px-6 md:px-8">
-   <div class="recommended-desktop">
-    <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
-     <i aria-hidden="true"></i><span>推荐阅读</span>
-    </div>
-    <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/10/15/Algorithms/Augmenting Data Structures/" title="Augmenting Data Structures" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="Augmenting Data Structures" class="!max-w-none">
-  <span class="title">Augmenting Data Structures</span>
-</a><a class="recommended-article-item" href="/2024/09/16/Algorithms/Sorting in Linear Time/" title="Sorting in Linear Time" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="Sorting in Linear Time" class="!max-w-none">
-  <span class="title">Sorting in Linear Time</span>
-</a><a class="recommended-article-item" href="/2024/09/17/Algorithms/Medians and Order Statistics/" title="Medians and Order Statistics" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="Medians and Order Statistics" class="!max-w-none">
-  <span class="title">Medians and Order Statistics</span>
-</a></div>
-   </div>
-   <div class="recommended-mobile">
-   <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
-     <i aria-hidden="true"></i><span>推荐阅读</span>
-   </div>
-   <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/10/15/Algorithms/Augmenting Data Structures/" title="Augmenting Data Structures" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="Augmenting Data Structures" class="!max-w-none">
-  <span class="title">Augmenting Data Structures</span>
-</a><a class="recommended-article-item" href="/2024/09/16/Algorithms/Sorting in Linear Time/" title="Sorting in Linear Time" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="Sorting in Linear Time" class="!max-w-none">
-  <span class="title">Sorting in Linear Time</span>
-</a></div>
-   </div>
-  </div>
 
 		
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
@@ -928,6 +815,7 @@ property</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" hre
 	</div>
 	
 </div>
+
 			</div>
 
 			
@@ -1002,6 +890,11 @@ property</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" hre
                 } catch (error) {}
             </script>
         
+        
+            
+                
+        
+                
         
         
     </div>  
@@ -1149,6 +1042,8 @@ property</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" hre
 
 
 
+
+    <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/anime.min.js" ></script>
 
 
 
